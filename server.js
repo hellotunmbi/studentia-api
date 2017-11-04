@@ -27,6 +27,14 @@ app.use('/api/students', require('./api/students/routes/get_student'));
 app.use('/api/students', require('./api/students/routes/delete_student'));
 app.use('/api/students', require('./api/students/routes/put_student'));
 
+app.get('/', (request, response) => {
+    response.json({ message: 'You successfully connected.'})
+});
+
+app.get('/api', (request, response) => {
+    response.json({ message: 'Welcome to API Home.'})
+});
+
 
 
 /* CONFIGURE HOSTNAME AND PORT  */
