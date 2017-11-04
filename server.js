@@ -38,10 +38,10 @@ app.get('/api', (request, response) => {
 
 
 /* CONFIGURE HOSTNAME AND PORT  */
-const hostname = "localhost";
+const hostname = "https://studentia-api.herokuapp.com/";
 const port = 3001;
 
-app.listen(process.env.PORT || 5000, process.env.hostname, () => {
+app.listen(process.env.PORT || 5000, hostname, () => {
 
     mongoose.connect(mongooseUri, dbOptions, (err) => {
         if (err) {
