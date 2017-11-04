@@ -41,7 +41,7 @@ app.get('/api', (request, response) => {
 const hostname = "localhost";
 const port = 3001;
 
-app.listen(port, hostname, () => {
+app.listen(process.env.PORT || 5000, process.env.hostname, () => {
 
     mongoose.connect(mongooseUri, dbOptions, (err) => {
         if (err) {
