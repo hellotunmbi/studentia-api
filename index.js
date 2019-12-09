@@ -12,6 +12,8 @@ const mongodbUri = 'mongodb://student:password@ds143245.mlab.com:43245/studentia
 const mongooseUri = uriUtil.formatMongoose(mongodbUri);
 const dbOptions = { useUnifiedTopology: true, useNewUrlParser: true };
 
+require('dotenv').config();
+
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(cors());
