@@ -1,24 +1,29 @@
 {
-  "name": "studentia",
-  "version": "1.0.0",
-  "description": "",
-  "main": "server.js",
-  "scripts": {
-    "start": "node server.js",
-    "dev": "nodemon server.js "
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "dependencies": {
-    "body-parser": "^1.18.2",
-    "cors": "^2.8.4",
-    "express": "^4.16.2",
-    "mongodb-uri": "^0.9.7",
-    "mongoose": "^5.7.5"
-  },
-  "engines": {
-    "node": "6.11.1",
-    "nopm": "3.10.10"
-  }
+	"name": "studentia",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"scripts": {
+		"start": "node index.js",
+		"dev": "nodemon index.js ",
+		"test": "jest"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"dependencies": {
+		"body-parser": "^1.18.2",
+		"cors": "^2.8.4",
+		"express": "^4.16.2",
+		"mongodb-uri": "^0.9.7",
+		"mongoose": "^5.7.5",
+		"nodemon": "^2.0.1"
+	},
+	"engines": {
+		"node": "6.11.1",
+		"nopm": "3.10.10"
+	},
+	"devDependencies": {
+		"jest": "^24.9.0"
+	}
 }
