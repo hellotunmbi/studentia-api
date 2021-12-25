@@ -9,13 +9,11 @@ Base Endpoint: https://studentia-api.herokuapp.com/api/
 - Install NPM
 - Fork or Clone repository
 
-
 ### Running
 
 - `cd` into repository
 - Run `npm install`
 - Run `npm start`
-
 
 ### How to use
 
@@ -27,9 +25,8 @@ You can use Postman to get and post requests
 
 `GET /student/<id>` - Get single student details
 
-`POST /student` - Register a new student: Params: first_name, last_name, faculty, department, level, sex
+`POST /student` - Register a new student. Send Body: first_name, last_name, faculty, department, level, sex
 
 `PUT /student/<id>` - Updates a single student's record
 
 `DELETE /student/<id>` - Deletes a single student
-
